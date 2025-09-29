@@ -1,4 +1,4 @@
-package org.example;
+package org.newswebsite;
 
 import util.DbConnection;
 
