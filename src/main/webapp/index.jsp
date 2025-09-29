@@ -15,22 +15,11 @@
 <body>
 <h2>News Categories</h2>
 <ul>
-    <%
-        List<Category> categories = (List<Category>) request.getAttribute("categories");
-        if (categories != null && !categories.isEmpty()) {
-            for (Category c : categories) {
-    %>
+    <c:forEach var="category" items="${categories}">
         <li>
-            <a href="news?categoryId=<%=c.getId()%>"><%=c.getName()%></a>
+            <a href="news?categoryId=${category.id}">${category.name}</a>
         </li>
-    <%
-            }
-        } else {
-    %>
-        <li>No categories found</li>
-    <%
-        }
-    %>
+    </c:forEach>
 </ul>
 </body>
 </html>
