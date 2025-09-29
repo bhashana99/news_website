@@ -6,6 +6,9 @@ public class Comment {
     private String name;
     private String content;
 
+    public Comment() {
+    }
+
     public Comment(int id, int newsId, String name, String content) {
         this.id = id;
         this.newsId = newsId;

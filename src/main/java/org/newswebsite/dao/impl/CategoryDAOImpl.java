@@ -15,7 +15,8 @@ public class CategoryDAOImpl implements ICategoryDAO {
     @Override
     public List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<>();
-        String sql = "SELECT * FROM Category";
+        System.out.println("bef");
+        String sql = "SELECT * FROM category";
 
         try (Connection conn = DbConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql);

@@ -8,6 +8,9 @@ public class News {
     private String content;
     private List<Category> categories;
 
+    public News() {
+    }
+
     public News(int id, String title, String content, List<Category> categories) {
         this.id = id;
         this.title = title;

@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
         try (Connection conn = DbConnection.getConnection()) {
             if (conn != null) {
-                System.out.println("Connected to MySQL successfully!");
+                System.out.println("Connected to DB!");
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

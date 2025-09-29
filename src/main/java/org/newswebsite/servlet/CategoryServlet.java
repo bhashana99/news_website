@@ -28,6 +28,7 @@ private final ICategoryDAO categoryDAO;
 
         try {
             List<Category> categories = categoryDAO.getAllCategories();
+            System.out.println(categories);
             request.setAttribute("categories", categories);
             request.getRequestDispatcher("/index.jsp").forward(request, response);
 
